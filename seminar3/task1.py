@@ -4,20 +4,18 @@
 В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
 '''
 
-from random import randint
-print("введите длинну массива")
-n = int(input())
-print("введите нужное число")
-a = int(input())
-count = 0
-nums = []
-nums(randint(1, 10))
-for i in range (n):
-    nums[randint(1, 10)]
-    if [i] == a:
-        count += 1
-print(nums)
-print (a, "встречается", count)
+N = abs(int(input('Введите количество элементов списка А: ')))
+A_entered = input("Введите через пробел элементы списка: ").split()
+A_num = list(map(int, A_entered))
+if len(A_num) != N:
+    print('Введенные элементы не соответствуют заявленному количеству!')
+else:
+    X = int(input('Введите число X, которое необходимо найти в списке: '))
+    count = 0
+    for i in range(N):
+        if A_num[i] == X:
+            count += 1
+    print(f'Число {X} встречается в списке A {count} раз') 
 
 
 
