@@ -19,6 +19,7 @@ def says(str):
         for i in word:
             if i in "аоеуиыэяё":
                 counter+=1
+        list.append(str)
     return len(list) == list.count(list[0])
 if says(string):
     print("парам пам пам")
